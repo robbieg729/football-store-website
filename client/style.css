@@ -1,0 +1,58 @@
+.dropdown-item:hover{
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}
+.card-link:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.card{
+    align-self: center;
+}
+h1{
+    background-color:#198754;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, th, td, p, .nav-link, span, button, input, .dropdown-item{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-link{
+    font-size: large;
+    margin-right: 40px;
+}
+.nav-link:hover{
+    background-color: #198754;
+}
+.item-title:hover, .seller-link:hover, .profile-link:hover{
+    text-decoration: underline;
+}
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+.item-list-img{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+.col{
+    align-items: center;
+}
+.related-item-img{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+form{
+    width: 500px;
+}
+.dropdown-menu{
+    width: 200px;
+}
+.input-group-text{
+    background-color: #198754;
+    color: white;
+}
