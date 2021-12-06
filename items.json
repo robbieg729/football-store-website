@@ -1,0 +1,157 @@
+{
+    "gloves":
+    [
+        {
+            "id": "000001",
+            "description": "Under Armour 5X Gloves Medium",
+            "type": "gloves",
+            "image": "Images/Items/000001.jpg",
+            "price": "$24.99",
+            "seller_name": "John Smith",
+            "seller_id": "000001" 
+        },
+        {
+            "id": "000002",
+            "description": "Freezing Cold Emoji Gloves Large",
+            "type": "gloves",
+            "image": "Images/Items/000002.jpg",
+            "price": "$22.99",
+            "seller_name": "Mark Jones",
+            "seller_id": "000002"         
+        },
+        {
+            "id": "000007",
+            "description": "Green Bay Packers Gloves Small",
+            "type": "gloves",
+            "image": "Images/Items/000007.jpg",
+            "price": "$20.99",
+            "seller_name": "John Smith",
+            "seller_id": "000001"         
+        },
+        {
+            "id": "000008",
+            "description": "Nike Vapor Jet 5.0 Red Gloves Medium",
+            "type": "gloves",
+            "image": "Images/Items/000008.jpg",
+            "price": "$21.99",
+            "seller_name": "Robbie Goodall",
+            "seller_id": "000003"         
+        },
+        {
+            "id": "000011",
+            "description": "Tennessee Titans Gloves Large",
+            "type": "gloves",
+            "image": "Images/Items/000011.jpg",
+            "price": "$29.99",
+            "seller_name": "David Williams",
+            "seller_id": "000004"         
+        },
+        {
+            "id": "000014",
+            "description": "Nike Vapor Jet 6.0 Black Gloves Medium",
+            "type": "gloves",
+            "image": "Images/Items/000014.jpg",
+            "price": "$30.99",
+            "seller_name": "Bob Smith",
+            "seller_id": "000006"         
+        },
+        {
+            "id": "000016",
+            "description": "Pittsburgh Steelers Gloves Small",
+            "type": "gloves",
+            "image": "Images/Items/000016.jpg",
+            "price": "$19.99",
+            "seller_name": "Alex Burrow",
+            "seller_id": "000007"         
+        }
+    ],
+
+    "pads":
+    [
+        {
+            "id": "000003",
+            "description": "Riddell Shoulder Pads Blue Small",
+            "type": "pads",
+            "image": "Images/Items/000003.jpg",
+            "price": "$34.99",
+            "seller_name": "John Smith",
+            "seller_id": "000001"         
+        },
+        {
+            "id": "000004",
+            "description": "Xtech X2 Shoulder Pads Medium",
+            "type": "pads",
+            "image": "Images/Items/000004.jpg",
+            "price": "$40.99",
+            "seller_name": "John Smith",
+            "seller_id": "000001"         
+        },
+        {
+            "id": "000005",
+            "description": "Schutt XV Shoulder Pads Medium",
+            "type": "pads",
+            "image": "Images/Items/000005.jpg",
+            "price": "$30.99",
+            "seller_name": "Mark Jones",
+            "seller_id": "000002"         
+        },
+        {
+            "id": "000013",
+            "description": "Adams VS Black Shoulder Pads Small",
+            "type": "pads",
+            "image": "Images/Items/000013.jpg",
+            "price": "$28.99",
+            "seller_name": "Andrew James",
+            "seller_id": "000005"         
+        }
+    ],
+
+    "helmets":
+    [
+        {
+            "id": "000006",
+            "description": "Xenith X2E+ Helmet Medium",
+            "type": "helmets",
+            "image": "Images/Items/000006.jpg",
+            "price": "$52.99",
+            "seller_name": "Robbie Goodall",
+            "seller_id": "000003"         
+        },
+        {
+            "id": "000009",
+            "description": "Riddell Black Helmet Small",
+            "type": "helmets",
+            "image": "Images/Items/000009.jpg",
+            "price": "$54.99",
+            "seller_name": "David Williams",
+            "seller_id": "000004"         
+        },
+        {
+            "id": "000010",
+            "description": "Riddell NFL Helmet Small",
+            "type": "helmets",
+            "image": "Images/Items/000010.jpg",
+            "price": "$49.99",
+            "seller_name": "Robbie Goodall",
+            "seller_id": "000003"         
+        },
+        {
+            "id": "000012",
+            "description": "Riddell Speed Helmet Red Medium",
+            "type": "helmets",
+            "image": "Images/Items/000012.jpg",
+            "price": "$62.99",
+            "seller_name": "John Smith",
+            "seller_id": "000001"         
+        },
+        {
+            "id": "000015",
+            "description": "Riddell SpeedFlex Helmet White Large",
+            "type": "helmets",
+            "image": "Images/Items/000015.jpg",
+            "price": "$69.99",
+            "seller_name": "Alex Burrow",
+            "seller_id": "000007"         
+        }
+    ]
+}

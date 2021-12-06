@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://st-ar.cdn.postman.com/requester-46c499b701b65e68bf28.css">
+    </head>
+</html>
+<body style="overflow-y: scroll;">
+    <div class="container-fluid">
+        <div class="documentation-body">
+            <div class="entity-documentation collection-documentation docs-workbench-view" id="collection-dfd257ac-ac59-439c-b2ff-13b60984468d">
+                <div class="context-bar-header">
+                    <h1 class="documentation-item-name">
+                        <div class="documentation-item-name__title">
+                            <div class="documentation-item-name__text">
+                                Web API for Second-Hand Football Gear Site
+                            </div>
+                        </div>
+                    </h1>
+                </div>
+                <div class="documentation-description documentation-description--workbench">
+                    <div class="description-preview">
+                        <div class="markdown-viewer description-preview__markdown">
+                            <h1 id="introduction">
+                                <span>Introduction</span>
+                            </h1>
+                            <p>
+                                <span>The API provides information on how certain requests are handled for a Second-Hand Football Gear shopping website. The website is single-page, so each request returns some data that will alter the look of the single HTML page.</span>
+                            </p>
+                            <h1 id="overview">
+                                <span>Overview</span>
+                            </h1>
+                            <p>
+                                <span>The API contains several GET requests, most of which return JSON arrays containing either item objects or seller objects, which are to be displayed on the single HTML page. Data that was on the HTML page just beforehand will be removed and replaced, in order to match the meaning of each route (i.e. if the current route is /sellers, the display of the page will be a list of sellers. If a button is clicked to go to /items, then the list of sellers will be removed and replaced with a list of items).</span>
+                            </p>
+                            <p>
+                                <span>The API also contains some POST requests, which correspond to certain forms. The idea of these is to get the data from the form, and add it to a relevant JSON array on the server, provided that all of the entries in the form are of a valid format.</span>
+                            </p>
+                            <h1 id="error-codes">
+                                <span>Error Codes</span>
+                            </h1>
+                            <p>
+                                <span>The only status codes to expect are 200 (indicating the response of a certain request is OK) or 404 (indicating a wrong route).</span>
+                            </p>
+                            <h1 id="rate-limit">
+                                <span>Rate limit</span>
+                            </h1>
+                            <p>
+                                <span>There is no limit to the number of requests that can be sent.</span>
+                            </p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="entity-documentation request-documentation docs-workbench-view" id="request-b19fc869-d108-43cf-881e-38327c299c99">
+                <div class="context-bar-header">
+                    <h3 class="documentation-item-name">
+                        <span class="documentation-item-name__request">
+                            <span class="request-method request-method--GET">GET</span>
+                        </span>
+                        <div class="documentation-item-name__title">
+                            <div class="documentation-item-name__text">127.0.0.1:8090/home</div>
+                        </div>
+                    </h3>
+                </div>
+                <div class="documentation-description documentation-description--workbench">
+                    <div class="request-documentation--url"><div class="request-url">127.0.0.1:8090/home</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Returns JSON array of the 6 most recently listed items, in order of newest first.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-8ff91a59-db2d-4976-a507-8c9072d70572"><div class="context-bar-header">
+            <h3 class="documentation-item-name">
+                <span class="documentation-item-name__request">
+                    <span class="request-method request-method--GET">GET</span>
+                </span>
+                <div class="documentation-item-name__title">
+                    <div class="documentation-item-name__text">127.0.0.1:8090/items</div>
+                </div>
+            </h3>
+        </div>
+        <div class="documentation-description documentation-description--workbench">
+            <div class="request-documentation--url"><div class="request-url">127.0.0.1:8090/items</div>
+        </div>
+        <div class="description-preview">
+            <div class="markdown-viewer description-preview__markdown">
+                <p>
+                    <span>Returns JSON array of all listed items. Also contains a query variable in the route called 'sortOption', whose value determines the order in which the items 
+                        are displayed. Possible options are sort by price (ascending or descending), size (ascending or descending), or no sort at all.</span>
+                </p>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-3aef16a6-38d2-4266-8f32-549f5adb79b5">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--GET">GET</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/items/:itemType</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/items/:itemType</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Returns JSON array of all listed items of the specified type. Valid types are "gloves", "pads", or "helmets". Also contains a query variable in the route called 'sortOption', whose value determines the order in which the items 
+                                are displayed. Possible options are sort by price (ascending or descending), size (ascending or descending), or no sort at all.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-0530a699-5053-4da7-9da5-4d0d84c58f26">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--GET">GET</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/items/:itemType/:id</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/items/:itemType/:id</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Returns JSON array, with the first element being the item of the specified type whose unique ID matches the one given in the route. Valid item types are the same. The rest of the array contains items related to the main item, including items of the same type, or items listed by the same seller.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-f31b6b7e-ff6d-4b46-96ed-006c11cc904e">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--GET">GET</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/sellers</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/sellers</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Returns JSON array of all sellers. Also contains a query variable in the route called 'sortOption', whose value determines the order in which the sellers 
+                                are displayed. Possible options are sort by number of listed items (ascending or descending), or no sort at all.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-35137e6b-010c-4803-9618-e15e24d1bfca">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--GET">GET</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/sellers/:id</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/sellers/:id</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Returns JSON array, with the first element being the seller whose unique ID matches the one given in the route. The second element of the array contains an array of items listed by that seller. Also contains a query variable in the route called 'sortOption', whose value determines the order in which the sellers items 
+                                are displayed. Possible options are sort by price (ascending or descending), size (ascending or descending), or no sort at all.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-e66a16e9-fe94-4a1b-8851-3132a5f2a834">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--POST">POST</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/items/add</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/items/add</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Accepts a form for the listing of a new item. The submitted form contains information about the seller (name and email), and the item as a whole (type, description, size, price, and an image). The item data is then pushed onto the relevant JSON array so as to list a new item. If the seller is identified to be a new seller, then the seller data is pushed onto the relevant JSON array so as to add a new seller.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entity-documentation request-documentation docs-workbench-view" id="request-f480845d-d658-46e7-bbed-7f0e5a7fdde2">
+            <div class="context-bar-header">
+                <h3 class="documentation-item-name">
+                    <span class="documentation-item-name__request">
+                        <span class="request-method request-method--POST">POST</span>
+                    </span>
+                    <div class="documentation-item-name__title">
+                        <div class="documentation-item-name__text">127.0.0.1:8090/sellers/add</div>
+                    </div>
+                </h3>
+            </div>
+            <div class="documentation-description documentation-description--workbench">
+                <div class="request-documentation--url">
+                    <div class="request-url">127.0.0.1:8090/sellers/add</div>
+                </div>
+                <div class="description-preview">
+                    <div class="markdown-viewer description-preview__markdown">
+                        <p>
+                            <span>Accepts a form for the addition of a new seller. The submitted form contains information about the seller (name and email). If the seller is identified to be already on the server, no data is pushed onto the relevant JSON array. Otherwise, the new seller data is pushed onto the relevant JSON array so as to add a new seller.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
